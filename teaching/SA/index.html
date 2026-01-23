@@ -1,22 +1,187 @@
 <!doctype html>
-<html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Software Analysis / 2025Fall</title>
+  <meta name="description" content="Software Analysis" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
 <body>
+  <!-- 顶部栏 -->
+  <header class="site-header">
+    <div class="wrapper header-inner">
+      <div class="brand">
+        <div class="brand-line1">
+          <a class="brand-school" href="https://www.cqu.edu.cn" target="_blank" rel="noopener noreferrer">
+            Chongqing University
+          </a>
+        </div>
+        <div class="brand-line2">
+          <a class="brand-title" href="./">Software Analysis</a>
+          <span class="brand-semester">2025Fall</span>
+        </div>
+      </div>
 
-<h2>Software Analysis</h2>
+      <input class="nav-toggle" type="checkbox" id="nav-toggle" aria-label="切换导航菜单" />
+      <label class="nav-toggle-btn" for="nav-toggle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
 
-<ul>
-  <li><a href="01Intro.pdf">Introduction</a></li>
-  <li><a href="02OpS.pdf">Operating Semantics</a></li>
-  <li><a href="03PTA.pdf">Collecting Semantics and Pointer Analysis</a></li>
-  <li><a href="04CFA.pdf">Control Flow Analysis</a></li>
-  <li><a href="05DFA.pdf">Data Flow Analysis</a></li>
-  <li><a href="06DSCFL.pdf">Denotational Semantics and CFL Reachability</a></li>
-  <li><a href="07TA.pdf">Trace Semantics</a></li>
-  <li><a href="08MC_a.pdf">Temporal Logic Model Checking (a)</a>, <a href="08MC_b.pdf">(b)</a></li>
-  <li><a href="09SE.pdf">Symbolic Execution</a></li>
-  <li><a href="10AS.pdf">Program Verification and Axiom Semantics</a></li>
-</ul>
+      <nav class="site-nav" aria-label="主导航">
+        <a class="nav-link" href="#home">Index</a>
+        <a class="nav-link" href="#lectures">Lectures</a>
+        <a class="nav-link" href="#assignments">Assignments</a>
+        <a class="nav-link" href="#materials">Materials</a>
+      </nav>
+    </div>
+  </header>
 
-Please help to build a webpage for this course by referring to this link <a href="https://xiongyingfei.github.io/SA_new/2025/">"https://xiongyingfei.github.io/SA_new/2025/"</a>.
+  <main class="page">
+    <div class="wrapper">
+      <!-- 标题 -->
+      <section id="home" class="hero">
+        <h1 class="page-title">Software Analysis <span class="muted">/ 2025Fall</span></h1>
+      </section>
+
+      <!-- 课程简介 -->
+      <section class="card">
+        <div class="card-hd">
+          <h2 class="card-title">Introduction</h2>
+        </div>
+        <div class="card-bd">
+          <p>
+            
+          </p>
+        </div>
+      </section>
+
+      <!-- 课程信息 -->
+      <section class="card" aria-label="课程信息">
+        <div class="card-hd">
+          <h2 class="card-title">Course Duration</h2>
+        </div>
+        <div class="card-bd">
+          <dl class="kv">
+            <div class="kv-row">
+              <dt>Course Schedule</dt>
+              <dd></dd>
+            </div>
+            <div class="kv-row">
+              <dt>Course Location</dt>
+              <dd></dd>
+            </div>
+            <div class="kv-row">
+              <dt>Course Content</dt>
+              <dd>
+                <ul class="bullets">
+                  <li>Program analysis based on abstract interpretation (data flow analysis, interprocedural analysis, pointer analysis, abstract interpretation and automation, etc.)</li>
+                  <li>Program analysis based on constraint solving (SAT, SMT, symbolic execution, etc.)</li>
+                  <li>Applications of software analysis (program synthesis, bug localization, bug fixing, etc.)</li>
+                </ul>
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <!-- 讲义列表 -->
+      <section id="lectures" class="card" aria-label="课程讲义">
+        <div class="card-hd">
+          <h2 class="card-title">Course handouts</h2>
+          <p class="card-subtitle">Click on the title to download the corresponding PDF.</p>
+        </div>
+        <div class="card-bd">
+          <ol class="lecture-list">
+            <li><a href="01Intro.pdf">Introduction</a></li>
+            <li><a href="02OpS.pdf">Operating Semantics</a></li>
+            <li><a href="03PTA.pdf">Collecting Semantics and Pointer Analysis</a></li>
+            <li><a href="04CFA.pdf">Control Flow Analysis</a></li>
+            <li><a href="05DFA.pdf">Data Flow Analysis</a></li>
+            <li><a href="06DSCFL.pdf">Denotational Semantics and CFL Reachability</a></li>
+            <li><a href="07TA.pdf">Trace Semantics</a></li>
+            <li>
+              <a href="08MC_a.pdf">Temporal Logic Model Checking (a)</a>
+              <span class="sep">,</span>
+              <a href="08MC_b.pdf">(b)</a>
+            </li>
+            <li><a href="09SE.pdf">Symbolic Execution</a></li>
+            <li><a href="10AS.pdf">Program Verification and Axiom Semantics</a></li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- 作业（占位） -->
+      <section id="assignments" class="card" aria-label="作业">
+        <div class="card-hd">
+          <h2 class="card-title">Assignments</h2>
+          <p class="card-subtitle">先用占位，后续把条目按需要补充。</p>
+        </div>
+        <div class="card-bd">
+          <ul class="list">
+            <li class="list-item">
+              <span class="tag">示例</span>
+              程序合成：其他方法
+              <span class="deadline">截止：2025/12/23 上课前</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 材料 -->
+      <section id="materials" class="card" aria-label="材料">
+        <div class="card-hd">
+          <h2 class="card-title">Materials</h2>
+          <p class="card-subtitle"></p>
+        </div>
+        <div class="card-bd">
+          <ul class="list">
+            <li class="list-item">
+              
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 教师/助教 -->
+      <section class="card" aria-label="任课教师与助教">
+        <div class="card-hd">
+          <h2 class="card-title">Instructor / Course Assistant</h2>
+        </div>
+        <div class="card-bd">
+          <div class="grid-2">
+            <div class="person">
+              <h3 class="person-title">Instructor</h3>
+              <p class="person-name"><a href="">Dongjie He</a></p>
+              <p class="muted">Professor</p>
+            </div>
+
+            <div class="person">
+              <h3 class="person-title">Course Assistant</h3>
+              <ul class="bullets">
+                <li><a href="">TBD</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrapper footer-inner">
+      <div class="footer-left">
+        <div class="muted">Chongqing University</div>
+      </div>
+      <div class="footer-right">
+        <a href="https://www.cqu.edu.cn" target="_blank" rel="noopener noreferrer">cqu.edu.cn</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
